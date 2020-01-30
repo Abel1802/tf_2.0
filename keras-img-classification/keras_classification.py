@@ -47,7 +47,7 @@ def train(data, model):
     x_validation, y_validation = data[2], data[3]
 
     # start training
-    history = model.fit(x_train, y_train, epochs=10,
+    history = model.fit(x_train, y_train, epochs=5,
               validation_data=(x_validation, y_validation))
 
 def estimate(data, model):
