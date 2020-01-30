@@ -68,7 +68,7 @@ def keras_model(data):
     model = WideDeepModel()
     model.build(input_shape=(None, 8))
     print(model.summary())
-    
+
     # compile the model
     # model.compile(keras.optimizers.Adam(0.001), loss='mean_squared_error', metrics=['accuracy'])
     model.compile(loss='mean_squared_error', optimizer='sgd')

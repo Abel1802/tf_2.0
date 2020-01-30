@@ -16,6 +16,6 @@
 * **get_tensor_by_name, as_graph-def**  
 - - - 
 ## 自动求导（auto gradient）
-* ** tf.GradientTape**  
+* **tf.GradientTape**    
 * **Optimizer.apply_gradients** 
 - - -
