@@ -9,7 +9,7 @@
 * **keras.layers.Lambda 和 继承法**  
 - - -  
 ## tf.function
-* ** tf.function, tf.autograph.to_code, get_concrete_function**  
+* **tf.function, tf.autograph.to_code, get_concrete_function**  
 - - -  
 ## GraphDef
 * **get_operations, get_operation_by_name**  
