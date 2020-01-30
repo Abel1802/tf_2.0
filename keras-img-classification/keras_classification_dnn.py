@@ -64,17 +64,21 @@ def keras_model():
 def train(data, model):
     x_train, y_train = data[0], data[1]
     x_validation, y_validation = data[2], data[3]
-    x_test, y_test = data[4], data[5]
+
 
     # start training
     history = model.fit(x_train, y_train, epochs=10,
               validation_data=(x_validation, y_validation))
 
+def test(data, model):
+    x_test, y_test = data[4], data[5]
+    model.evaluate(x_test, y_test)
 
 def main():
     data = data_process()
     model = keras_model()
     train(data, model)
+    test(data, model)
 
 
 if __name__ == "__main__":
